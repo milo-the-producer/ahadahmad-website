@@ -1,0 +1,649 @@
+/* Reset default browser margins, padding, and set box-sizing to border-box for consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font and background for the body, ensure full viewport height */
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section: Fixed navigation bar with shadow and z-index for layering */
+.header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  justify-content: space-between;
+  padding: 0 16px;
+  /* border: 1px solid grey; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* Left Section: Contains hamburger menu and YouTube logo */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for hamburger menu icon */
+.hamburger-menu {
+  height: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+/* Style for YouTube logo */
+.youtube-logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Middle Section: Search bar and buttons */
+.middle-section {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 32px;
+  align-items: center;
+}
+
+/* Search bar input styling */
+.search-bar {
+  flex: 1;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+/* Placeholder text styling for search bar */
+.search-bar::placeholder {
+  color: #606060;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Focus state for search bar */
+.search-bar:focus {
+  border-color: #1a73e8;
+}
+
+/* Search button styling */
+.search-button {
+  height: 40px;
+  width: 64px;
+  border: 1px solid #ccc;
+  border-radius: 0 2px 2px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect for search button */
+.search-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Search button icon styling */
+.search-button img {
+  height: 24px;
+}
+
+/* Voice search button styling */
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect for voice search button */
+.voice-search-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Voice search button icon styling */
+.voice-search-button img {
+  height: 24px;
+}
+
+/* Right Section: User interaction icons */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* General styling for right section icons */
+.header-right-icon {
+  height: 24px;
+  cursor: pointer;
+}
+.right-section .badge {
+    position: absolute;
+    top: 15px;
+    right: 72px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+/* Profile picture styling */
+.profile-logo {
+  border-radius: 50%;
+  height: 32px;
+}
+
+/* Sidebar: Fixed vertical navigation menu */
+.side-bar {
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  width: 72px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  z-index: 99;
+}
+
+/* Sidebar icon container styling */
+.sidebar-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 0;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect for sidebar icons */
+.sidebar-icon:hover {
+  background-color: #f8f8f8;
+}
+
+/* Sidebar icon image styling */
+.sidebar-icon img {
+  width: 24px;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+/* Sidebar icon text styling */
+.sidebar-icon p {
+  font-size: 10px;
+  color: #030303;
+}
+
+/* Video Grid: Main content area for video cards */
+.video-grid {
+  margin-top: 56px;
+  margin-left: 72px;
+  padding: 24px 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+  max-width: 100%;
+}
+
+/* Video Card: Container for individual video */
+.video-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+/* Hover effect for video card */
+.video-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Make the entire thumbnail clickable */
+.video-card a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+/* Thumbnail styling */
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.2s;
+}
+
+/* Hover effect on thumbnail */
+.video-card a:hover .thumbnail {
+  opacity: 0.9;
+}
+
+/* Video Duration Badge: Overlay on thumbnail */
+.video-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Profile Picture at Bottom of Thumbnail */
+.thumbnail-profile {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  object-fit: cover;
+}
+
+/* Video Info: Container for video details */
+.video-info {
+  padding: 12px 0 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Channel Profile Picture styling */
+.channel-profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Video Text Container: Holds title, channel, and stats */
+.video-text {
+  flex: 1;
+}
+
+/* Video title styling with ellipsis for overflow */
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: #030303;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Channel name styling */
+.video-channel {
+  font-size: 12px;
+  color: #606060;
+  margin-bottom: 4px;
+}
+
+/* Video stats (views and time) styling */
+.video-stats {
+  font-size: 12px;
+  color: #606060;
+}
+
+/* Shorts Section: Container for Shorts videos */
+.shorts-section {
+  margin-left: 100px;
+  padding: 16px 16px 24px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Shorts Section Heading */
+.shorts-heading {
+  display: flex;
+  max-width: 1000px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px; /* Fixed height */
+  font-size: 18px; /* Specific font size for consistency */
+  font-weight: 500;
+  margin-bottom: 16px; /* Space between heading and cards */
+  color: #030303;
+}
+
+/* Shorts Container: Grid layout for Shorts cards */
+.shorts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: clamp(16px, 2vw, 24px); /* Dynamic gap that scales with viewport */
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+/* Remove scrollbar styles since we're no longer scrolling horizontally */
+.shorts-container::-webkit-scrollbar,
+.shorts-container::-webkit-scrollbar-thumb,
+.shorts-container::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Shorts Card: Individual Shorts video */
+.shorts-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.shorts-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Shorts Thumbnail Link */
+.shorts-card a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+/* Shorts Thumbnail Styling */
+.shorts-thumbnail {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* Vertical aspect ratio for Shorts */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid grey;
+  transition: opacity 0.2s;
+}
+
+/* Hover effect on Shorts thumbnail */
+.shorts-card a:hover .shorts-thumbnail {
+  opacity: 0.9;
+}
+
+/* Shorts Info: Container for title and stats */
+.shorts-info {
+  padding: 12px 0; /* Consistent padding for info */
+}
+
+/* Shorts Title Styling (for card titles, not the section heading) */
+.shorts-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #030303;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Shorts Stats Styling */
+.shorts-stats {
+  font-size: 12px;
+  color: #606060;
+  margin-top: 4px;
+}
+
+/* Latest Posts Section: Container for latest posts */
+.latest-posts-section {
+  margin-left: 80px;
+  padding: 16px 16px 24px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Latest Posts Container: Grid layout for latest posts */
+.latest-posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Same as video-grid */
+  gap: 16px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+/* Latest Post Card: Individual latest post */
+.latest-post-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.latest-post-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Latest Post Thumbnail Link */
+.latest-post-card a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+/* Latest Post Thumbnail Styling */
+.latest-post-thumbnail {
+  width: 100%;
+  height: 250px;
+  aspect-ratio: 16 / 9; /* Same aspect ratio as video thumbnails */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.2s;
+}
+
+/* Hover effect on Latest Post thumbnail */
+.latest-post-card a:hover .latest-post-thumbnail {
+  opacity: 0.9;
+}
+
+/* Latest Post Duration Badge: Overlay on thumbnail */
+.latest-post-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Latest Post Info: Container for title and stats */
+.latest-post-info {
+  padding: 12px 0 0 0; /* Consistent padding for info */
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Latest Post Channel Profile Picture styling */
+.latest-post-channel-profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Latest Post Text Container: Holds title, channel, and stats */
+.latest-post-text {
+  flex: 1;
+}
+
+/* Latest Post Title Styling */
+.latest-post-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: #030303;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Latest Post Channel name styling */
+.latest-post-channel {
+  font-size: 12px;
+  color: #606060;
+  margin-bottom: 4px;
+}
+
+/* Latest Post Stats Styling */
+.latest-post-stats {
+  font-size: 12px;
+  color: #606060;
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+
+/* Medium screens (up to 1200px) */
+@media (max-width: 1200px) {
+  /* Adjust video grid columns */
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  /* Adjust latest posts grid columns */
+  .latest-posts-container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+/* Tablets and small screens (up to 768px) */
+@media (max-width: 768px) {
+  /* Adjust sidebar width */
+  .side-bar {
+    width: 64px;
+  }
+  /* Reduce sidebar icon size */
+  .sidebar-icon img {
+    width: 20px;
+  }
+  /* Reduce sidebar text size */
+  .sidebar-icon p {
+    font-size: 9px;
+  }
+  /* Adjust video grid margin and columns */
+  .video-grid {
+    margin-left: 64px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  /* Reduce search bar width */
+  .middle-section {
+    max-width: 400px;
+  }
+  /* Reduce channel profile picture size */
+  .channel-profile {
+    width: 32px;
+    height: 32px;
+  }
+  /* Reduce thumbnail profile picture size */
+  .thumbnail-profile {
+    width: 20px;
+    height: 20px;
+  }
+  /* Adjust Shorts section margin */
+  .shorts-section {
+    margin-left: 64px;
+  }
+  /* Adjust latest posts section margin */
+  .latest-posts-section {
+    margin-left: 64px;
+  }
+  /* Adjust latest posts grid columns */
+  .latest-posts-container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  /* Reduce latest post channel profile picture size */
+  .latest-post-channel-profile {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  /* Hide sidebar on mobile */
+  .side-bar {
+    display: none;
+  }
+  /* Remove video grid margins for full-width */
+  .video-grid {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 16px;
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  /* Reduce search section margins */
+  .middle-section {
+    margin: 0 8px;
+  }
+  /* Reduce gap between right section icons */
+  .right-section {
+    gap: 16px;
+  }
+  /* Reduce header padding */
+  .header {
+    padding: 0 8px;
+  }
+  /* Further reduce channel profile picture size */
+  .channel-profile {
+    width: 28px;
+    height: 28px;
+  }
+  /* Further reduce thumbnail profile picture size */
+  .thumbnail-profile {
+    width: 18px;
+    height: 18px;
+  }
+  /* Adjust Shorts section margins */
+  .shorts-section {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px 8px 16px 8px; /* Adjusted padding for mobile */
+  }
+  /* Adjust latest posts section margins */
+  .latest-posts-section {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px 8px 16px 8px; /* Adjusted padding for mobile */
+  }
+  /* Adjust latest posts grid columns */
+  .latest-posts-container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  /* Further reduce latest post channel profile picture size */
+  .latest-post-channel-profile {
+    width: 28px;
+    height: 28px;
+  }
+}

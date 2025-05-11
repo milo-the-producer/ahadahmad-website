@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Define character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS stylesheet for styling -->
+  <link rel="stylesheet" href="youtube-clone.css">
+  <!-- Set page title -->
+  <title>YouTube Clone</title>
+</head>
+<body>
+  <!-- Header Section: Contains navigation, search, and user profile elements -->
+  <div class="header">
+    <!-- Left Section: Hamburger menu and YouTube logo -->
+    <div class="left-section">
+      <!-- Hamburger menu icon for sidebar toggle -->
+      <img src="images/header-cons/left-section/hamburger-menu.svg" class="hamburger-menu" alt="Menu">
+      <!-- YouTube logo linking to the official YouTube website -->
+      <a href="https://www.youtube.com/"><img src="images/header-cons/left-section/youtube-logo.svg" class="youtube-logo" alt="YouTube Logo"></a>
+    </div>
+    <!-- Middle Section: Search bar and search-related buttons -->
+    <div class="middle-section">
+      <!-- Input field for searching videos -->
+      <input type="text" class="search-bar" placeholder="Search">
+      <!-- Search button with magnifying glass icon -->
+      <button class="search-button">
+        <img src="images/header-cons/middle-section/search.svg" alt="Search">
+      </button>
+      <!-- Voice search button with microphone icon -->
+      <button class="voice-search-button">
+        <img src="images/header-cons/middle-section/voice-search-icon.svg" alt="Voice Search">
+      </button>
+    </div>
+    <!-- Right Section: User interaction icons -->
+    <div class="right-section">
+      <!-- Upload video icon -->
+      <img src="images/header-cons/right-section/upload.svg" class="header-right-icon" alt="Upload">
+      <!-- YouTube apps icon -->
+      <img src="images/header-cons/right-section/youtube-apps.svg" class="header-right-icon" alt="Apps">
+      <!-- Notifications icon -->
+      <img src="images/header-cons/right-section/notifications.svg" class="header-right-icon" alt="Notifications">
+      <span class="badge">3</span>
+
+      <!-- User profile picture -->
+      <img src="images/header-cons/right-section/channel_profile.jpg" class="header-right-icon profile-logo" alt="Profile">
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation: Contains links to main sections of the site -->
+  <div class="side-bar">
+    <!-- Home navigation item -->
+    <div class="sidebar-icon">
+      <img src="images/side-bar/home.svg" alt="Home">
+      <p>Home</p>
+    </div>
+    <!-- Explore navigation item -->
+    <div class="sidebar-icon">
+      <img src="images/side-bar/explore.svg" alt="Explore">
+      <p>Explore</p>
+    </div>
+    <!-- Subscriptions navigation item -->
+    <div class="sidebar-icon">
+      <img src="images/side-bar/subscriptions.svg" alt="Subscriptions">
+      <p>Subscriptions</p>
+    </div>
+    <!-- Originals navigation item -->
+    <div class="sidebar-icon">
+      <img src="images/side-bar/originals.svg" alt="Originals">
+      <p>Originals</p>
+    </div>
+    <!-- YouTube Music navigation item -->
+    <div class="sidebar-icon">
+      <img src="images/side-bar/youtube-music.svg" alt="YouTube Music">
+      <p>YouTube Music</p>
+    </div>
+    <!-- Library navigation item -->
+    <div class="sidebar-icon">
+      <img src="images/side-bar/library.svg" alt="Library">
+      <p>Library</p>
+    </div>
+  </div>
+  <!-- Video Grid Section: Displays a grid of video cards -->
+  <div class="video-grid">
+    <!-- Video Card: Represents a single video with thumbnail and details -->
+    <div class="video-card">
+      <!-- Video thumbnail linking to the video -->
+      <a href="https://youtu.be/RbQTFEAPe5U?si=ezTCKhVhlnMkFkOt" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/RbQTFEAPe5U/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDQ5INHXUvkvBMElclJKJY8dsuTNg" class="thumbnail">
+        <!-- Video duration overlay -->
+        <span class="video-duration">10:34</span>
+      </a>
+      <!-- Video information section -->
+      <div class="video-info">
+        <!-- Channel profile picture linking to the channel -->
+        <a href="https://www.youtube.com/@Garvitsahni7"><img src="https://yt3.ggpht.com/9RVY_8golfgUs2f5TOU4VeEfLvcDBSDdcwxZRZxxFZ8IRt6VQm4wMtAIvAF5wB0ltC86v7WD6A=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <!-- Video text details -->
+        <div class="video-text">
+          <p class="video-title">This Is Why Indian Boys Grow Up to Be Losers (No One Tells You This)</p>
+          <p class="video-channel">Garvit</p>
+          <p class="video-stats">6.5K views • 2 days ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Represents another video with thumbnail and details -->
+    <div class="video-card">
+      <a href="https://youtu.be/YNK27PRhTtA?si=mdu2jsq4VHqZfeAg" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/YNK27PRhTtA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC4pTRTJXBoA8heVH56k1_T36Ucjg" class="thumbnail" alt="Advertisement Video Thumbnail">
+        <span class="video-duration">8:58</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@DesiPhilosopher748"><img src="https://yt3.ggpht.com/BVVe2M6DELzClwO-3QVlTek-VO2-AKyQZpI4At_LA0An6sKuaVwTGLfKMj7ZTTln7g7TwfDC=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">Success is a mental game</p>
+          <p class="video-channel">Desi Philosopher</p>
+          <p class="video-stats">10K views • 1 days ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: HTML & CSS course video -->
+    <div class="video-card">
+      <a href="https://youtu.be/G3e-cpL7ofc?si=SrlPM4CN5ONwJCf2" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBUgh1_V4HoNSYh1R1bwvpreiz1kA" class="thumbnail">
+        <span class="video-duration">6:31:24</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@SuperSimpleDev"><img src="https://yt3.ggpht.com/ytc/AIdro_laf9dDyNATE1_RdVUKthwnwT9TSm9N0my0jL2H8gCvjw=s68-c-k-c0x00ffffff-no-rj" class="channel-profile" alt="Desi Philosopher Profile"></a>
+        <div class="video-text">
+          <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+          <p class="video-channel">SuperSimpleDev</p>
+          <p class="video-stats">14M views • 3 years ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Hackathon experience video -->
+    <div class="video-card">
+      <a href="https://youtu.be/VgDytOsG6Xo?si=pQAYf2pVAUZ7pxNN" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/VgDytOsG6Xo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDeWbw0S3Yw299uPUkRNLd1aKgF2Q" class="thumbnail">
+        <span class="video-duration">7:52</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@stephranaway"><img src="https://yt3.googleusercontent.com/MLD6tITgBdRa8oNO4a0E-eb2lCQ8h4Pn_HQhLCwwowtgtht0ZQD9xEHe_hGetQJHuJMvwmiw4w=s160-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">MY First Hackathon!</p>
+          <p class="video-channel">Steph Ran</p>
+          <p class="video-stats">669K views • 1 year ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Success blueprint video -->
+    <div class="video-card">
+      <a href="https://youtu.be/Y9rp5WPcAHg?si=s_I6DxaqdbFDCI-G">
+        <img src="https://i.ytimg.com/vi/Y9rp5WPcAHg/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnYfDJSiZcmNEGWjNq9RgTF3Hu_g" class="thumbnail">
+        <span class="video-duration">9:31</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@ZenSelfImprovement"><img src="https://yt3.ggpht.com/nU7EnnoPVr8oPjXsUBAzwQbrg_2ILf-g0WuHq5GGHCeJ35IFpe-y77h0P-Q1wlLoprJF_mdyrnU=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">The blueprint to your success</p>
+          <p class="video-channel">ZEN</p>
+          <p class="video-stats">50K views • 4 weeks ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Dreamcore playlist video -->
+    <div class="video-card">
+      <a href="https://youtu.be/lPXi-5XhDPE?si=-KR-9CDP56HxtQde" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/lPXi-5XhDPE/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-BIAC6AKKAgwIABABGEYgVShlMA8=&rs=AOn4CLDMczlj5evABdCx9DeKywmfdR48kQ" class="thumbnail">
+        <span class="video-duration">24:17</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@NephilistMusic"><img src="https://yt3.ggpht.com/dxu2YgeQssUnpdVSvhUYY-oVrkj3wrdWrFoXCwfvDXN1hsZllRa5nwj6_SkcHIXOHbadEk2n=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">running away | dreamcore playlist •°</p>
+          <p class="video-channel">Nephilist</p>
+          <p class="video-stats">10M views • 2 years ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Self-taught genius video -->
+    <div class="video-card">
+      <a href="https://youtu.be/ZBnAVwv7LN0?si=IberULItDgGDPvT5" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/ZBnAVwv7LN0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDJGXnWIBVstfF8ewgWt59MH_fxDg" class="thumbnail">
+        <span class="video-duration">11:14</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@Darkneedle-z1h"><img src="https://yt3.ggpht.com/dxu2YgeQssUnpdVSvhUYY-oVrkj3wrdWrFoXCwfvDXN1hsZllRa5nwj6_SkcHIXOHbadEk2n=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">How He Became a Self-Taught Genius Like Nikola Tesla (Learn 10x Faster & Never Forget)</p>
+          <p class="video-channel">Dark needle</p>
+          <p class="video-stats">13K views • 5 days ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Social aura improvement video -->
+    <div class="video-card">
+      <a href="https://youtu.be/glu_Lw2egf0?si=bB-k8oeis7rE6X_C" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/glu_Lw2egf0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCVvcWJqtc6H8eVuS2sMAmlCXU49Q" class="thumbnail">
+        <span class="video-duration">20:48</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@chadtag"><img src="https://yt3.ggpht.com/cOWAEj_4Sdgfuhz7QwHvOOrEjnut6JU9-a74kx66kY2UZyzINK3SzwYcYoYVXiA2jCneoD9X=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">How To Make People CRAVE Being Around You (4 Secrets) -AURAMAX</p>
+          <p class="video-channel">Chadtag</p>
+          <p class="video-stats">117K views • 5 months ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Night-themed playlist video -->
+    <div class="video-card">
+      <a href="https://youtu.be/wEyGMGSIfM0?si=fpSwX2CR6PhVeBD6" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/wEyGMGSIfM0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDMKFJXQTkG2RGNxtezCLaz2yng6w" class="thumbnail">
+        <span class="video-duration">1:03:23</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@celestial05"><img src="https://yt3.ggpht.com/U0mZ8xnRFbrYhpJffdM1v8Aen2HYVdh1dAC6hN2TYeD0oFh__sOZTdDXoTTMW7-2TewisOQ8yw=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">pov: the night we met[playlist]</p>
+          <p class="video-channel">celestial</p>
+          <p class="video-stats">3.7M views • 5 months ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: Computer science student advice video -->
+    <div class="video-card">
+      <a href="https://youtu.be/-cCL0gO3Mg0?si=7amZPMVGsnTB1QtM" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/-cCL0gO3Mg0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBVfv_4YfJfbkpWCDqApe1w6BwutA" class="thumbnail">
+        <span class="video-duration">25:23</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@Latticx"><img src="https://yt3.ggpht.com/6CfnOFPzKUrnyF0KVCPaCqj1fanAV-PQCkIDI_D1exkYIscRJE2QgblmWJN0aYBaq2IsxLrOt58=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">Seriously watch this if you're a computer science student</p>
+          <p class="video-channel">Lattice</p>
+          <p class="video-stats">142K views views • 1 months ago</p>
+        </div>
+      </div>
+    </div>
+    <!-- Video Card: IIT or identity discussion video -->
+    <div class="video-card">
+      <a href="https://youtu.be/hqg4rgE25Uo?si=Fj3kkUW04eSIacLX" rel="noopener noreferrer">
+        <img src="https://i.ytimg.com/vi/hqg4rgE25Uo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBQkOQJ5lsUvWfdZudMojKgR-af-g" class="thumbnail"><span class="video-duration">9:59</span>
+      </a>
+      <div class="video-info">
+        <a href="https://www.youtube.com/@snehiliit1250"><img src="https://yt3.ggpht.com/Wy9Ii9qwLY_FnRKniGNh1cZUBvTVBfpYthNvgICYjcSV1XtJOk2TmNbd8bWS0JNBz_OGo9j2CUo=s68-c-k-c0x00ffffff-no-rj" class="channel-profile"></a>
+        <div class="video-text">
+          <p class="video-title">IIT or identity?</p>
+          <p class="video-channel">snehiliit</p>
+          <p class="video-stats">500K views views • 1 year ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shorts Section: Horizontally scrollable shorts videos -->
+  <div class="shorts-section">
+    <!-- Section heading for Shorts -->
+      <img src="images/other-images/YouTube Shorts.png" class="shorts-heading">
+    
+    <!-- Container for Shorts cards, enables horizontal scrolling -->
+    <div class="shorts-container">
+      <!-- Shorts Card 1: Individual Shorts video card -->
+      <div class="shorts-card">
+        <a href="https://youtube.com/shorts/n-R7tEowCPA?si=KgqpyZl8fL7j2suG" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/n-R7tEowCPA/oardefault.jpg?sqp=-oaymwEoCJwEENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCXKAQ2qIudGTRBlhZx6scaR56HFg" class="shorts-thumbnail">
+        </a>
+        <div class="shorts-info">
+          <p class="shorts-title">"India Gave So Many Things To The World"</p>
+          <p class="shorts-stats">5.7K views</p>
+        </div>
+      </div>
+      <!-- Shorts Card 2: Individual Shorts video card -->
+      <div class="shorts-card">
+        <a href="https://youtube.com/shorts/5fuTCK3P6TY?si=OP3v9xBdUotjZXHB" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/5fuTCK3P6TY/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDEE0gSLoXSvjb3zp5HIH_fs_3Dtw" class="shorts-thumbnail">
+        </a>
+        <div class="shorts-info">
+          <p class="shorts-title">Average students can crack IIT? || IIT Motivation | JEE 2026 | JEE 2027 #iit #jee #shorts</p>
+          <p class="shorts-stats">21K views</p>
+        </div>
+      </div>
+      <!-- Shorts Card 3: Individual Shorts video card -->
+      <div class="shorts-card">
+        <a href="https://youtube.com/shorts/HczqECuobq4?si=3IIcUNWiFnVLW0JM" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/HczqECuobq4/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBfoWQTDJjHh9QWEESYaH2fP8J4eA" class="shorts-thumbnail">
+        </a>
+        <div class="shorts-info">
+          <p class="shorts-title">MARSHAL SAM MANEKSHAW ( why does a person not take a decision? ) // #nyinza #mindset #leadership</p>
+          <p class="shorts-stats">3.9M views</p>
+        </div>
+      </div>
+      <!-- Shorts Card 4: Individual Shorts video card -->
+      <div class="shorts-card">
+        <a href="https://youtube.com/shorts/x-DQdusoBCw?si=_DOZ_fr_uM-AL8LX" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/x-DQdusoBCw/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBkOxQhSIGQUZElNW-KeqPTDcvb3Q" class="shorts-thumbnail">
+        </a>
+        <div class="shorts-info">
+          <p class="shorts-title">Give your best, God will do the rest!! #shorts #wifimoney #entrepreneurship #success #mindset</p>
+          <p class="shorts-stats">16K views</p>
+        </div>
+      </div>
+      <!-- Shorts Card 5: Individual Shorts video card -->
+      <div class="shorts-card">
+        <a href="https://youtube.com/shorts/mJqDbQaM34Y?si=-UjPOSSHETdke7vh" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/mJqDbQaM34Y/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLD2OwKG-W4LiGX0oqlqD_RQtKPVOQ" class="shorts-thumbnail">
+        </a>
+        <div class="shorts-info">
+          <p class="shorts-title">A day in the life of a Software Developer at Microsoft | Vasundhra's Journey @microsoftidc 🥰</p>
+          <p class="shorts-stats">301K views</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Latest Posts Section: Grid layout for latest posts -->
+  <div class="latest-posts-section">
+    <!-- Container for Latest Posts cards -->
+    <div class="latest-posts-container">
+      <!-- Latest Post Card 1 -->
+      <div class="latest-post-card">
+        <a href="https://youtu.be/zCu-tUqA7Yc?si=5zUPR-jGxNiIVKXf" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/zCu-tUqA7Yc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAe5mwMte_1wVptA_sas6YEuyHXew" class="latest-post-thumbnail">
+          <span class="latest-post-duration">3:10</span>
+        </a>
+        <div class="latest-post-info">
+          <a href="https://www.youtube.com/@damdev393"><img src="https://yt3.ggpht.com/cyDKtPFHnkqymLOwdUcYUkXRKkY7qrzYEJz78nsM66Z7ccQ5QpIMb94bYzsJf9dw-RVdrwyNtw=s68-c-k-c0x00ffffff-no-rj" class="latest-post-channel-profile"></a>
+          <div class="latest-post-text">
+            <p class="latest-post-title">TBeing a Full Stack Developer Is Not What You Think</p>
+            <p class="latest-post-channel">DamDev</p>
+            <p class="latest-post-stats">576 views &bull; 2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Latest Post Card 2 -->
+      <div class="latest-post-card">
+        <a href="https://youtu.be/VQRLujxTm3c?si=eoEboIXJsmdAFXJS" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/VQRLujxTm3c/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCkid1D6ayXt8o9n-iKlixVBaK4Xg" class="latest-post-thumbnail">
+          <span class="latest-post-duration">2:47</span>
+        </a>
+        <div class="latest-post-info">
+          <a href="https://www.youtube.com/@RockstarGames"><img src="https://yt3.ggpht.com/-jCZaDR8AoEgC6CBPWFubF2PMSOTGU3nJ4VOSo7aq3W6mR8tcRCgygd8fS-4Ra41oHPo3F3P=s68-c-k-c0x00ffffff-no-rj" class="latest-post-channel-profile"></a>
+          <div class="latest-post-text">
+            <p class="latest-post-title">Grand Theft Auto VI Trailer 2</p>
+            <p class="latest-post-channel">Rockstar Games</p>
+            <p class="latest-post-stats">101M views &bull; 5 day ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Latest Post Card 3 -->
+      <div class="latest-post-card">
+        <a href="https://youtu.be/G3e-cpL7ofc?si=SrlPM4CN5ONwJCf2" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/HoDn8TNYNfU/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD8q8eLk8PLCr5F7ZaHopU6b2SYpA" class="latest-post-thumbnail">
+          <span class="latest-post-duration">4:13</span>
+        </a>
+        <div class="latest-post-info">
+          <a href="https://www.youtube.com/@SuperSimpleDev"><img src="https://yt3.ggpht.com/989KM9aXiv4eQVvhrT31_bPM4uQ6XWecTV9M4fQSVvXZa4bjslyraE6z8JkJ6FEhSzLwddSXCg=s68-c-k-c0x00ffffff-no-rj" class="latest-post-channel-profile"></a>
+          <div class="latest-post-text">
+            <p class="latest-post-title">Rustin Cohle Character : Analysis | True Detective || Hindi | #thinkers</p>
+            <p class="latest-post-channel">Kaizen THINKS</p>
+            <p class="latest-post-stats">153 views &bull; 12 hrs ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Latest Post Card 4 -->
+      <div class="latest-post-card">
+        <a href="https://youtu.be/z9G85jQuJBM?si=vwoyly1RrvBDlTw5" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/z9G85jQuJBM/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYACzgWKAgwIABABGHIgQig6MA8=&rs=AOn4CLBWFMWHGsZILdDbPMgPqZ_X3KOSPA" class="latest-post-thumbnail">
+          <span class="latest-post-duration">56:25</span>
+        </a>
+        <div class="latest-post-info">
+          <a href="https://www.youtube.com/channel/UC5ppb_O-AfTxY_yVMibwkNQ"><img src="https://yt3.ggpht.com/Y2_NX2p-YJpdnuEuY2RJEeEky3OVnc10kfMIGe1hYUzfOB1bvS2JAkMI-4-eTIj54XZdw7oWhw=s88-c-k-c0x00ffffff-no-rj" class="latest-post-channel-profile"></a>
+          <div class="latest-post-text">
+            <p class="latest-post-title">So, we meet again... my friend</p>
+            <p class="latest-post-channel">LUCIVORA</p>
+            <p class="latest-post-stats">484K views &bull; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Latest Post Card 5 -->
+      <div class="latest-post-card">
+        <a href="https://youtu.be/ZJ0kZqANHmQ?si=0HM-pNoQIxXbTnJ_" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/osh80YCg_GM/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-BIAC4AOKAgwIABABGF0gXShdMA8=&rs=AOn4CLCiguVO4mlb6TyBHyfFWanz0dwXJw" class="latest-post-thumbnail">
+          <span class="latest-post-duration">48:05</span>
+        </a>
+        <div class="latest-post-info">
+          <a href="https://www.youtube.com/@whishyouwerehere"><img src="https://yt3.ggpht.com/swNtJDBP8xHP_zwrbL4tCUQt02B-7Mr8XggFMBjANHn_Q5aUtPmxPs8f8Ag3wO2O-rJpsQQGpA=s68-c-k-c0x00ffffff-no-rj" class="latest-post-channel-profile"></a>
+          <div class="latest-post-text">
+            <p class="latest-post-title">16. Projection Matrices and Least Squares</p>
+            <p class="latest-post-channel">MIT OpenCourseWare</p>
+            <p class="latest-post-stats">492K views &bull; 16 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Latest Post Card 6 -->
+      <div class="latest-post-card">
+        <a href="https://youtu.be/EYy-p8RT6Hg?si=rpYgwRkdsLdptXhL" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/EYy-p8RT6Hg/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBSqu1vElsbHSYPtkcP174jtF4EqA" class="latest-post-thumbnail">
+          <span class="latest-post-duration">7:45</span>
+        </a>
+        <div class="latest-post-info">
+          <a href="https://www.youtube.com/@naoki-dailylife"><img src="https://yt3.ggpht.com/adisQz7w6K10IjtZeHbwHQfskuaKD_Tg1cMLOCudNs0gokjrcMT0_icieW8ZS54XfzXN7GRb=s68-c-k-c0x00ffffff-no-rj" class="latest-post-channel-profile"></a>
+          <div class="latest-post-text">
+            <p class="latest-post-title">4:00 AM Cold Winter Morning Routine | A Weekday Morning in a World Where Everyone Sleeps</p>
+            <p class="latest-post-channel">nao life</p>
+            <p class="latest-post-stats">301K views &bull; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
